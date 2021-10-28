@@ -16,6 +16,10 @@
   --primary-lightest: #b3f5da;
 }
 
+a {
+  text-decoration: none;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -31,6 +35,8 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   background-color: rgb(247, 239, 247);
   color: hsl(220, 13%, 18%);
+  display: flex;
+  flex-direction: column;
 }
 
 #main-header {
@@ -66,4 +72,17 @@ body {
   background-color: var(--primary-lightest);
   border: solid 1px transparent;
   color: var(--primary);
+}
+
+#main {
+  min-height: 80vh;
+}
+
+#footer {
+  text-align: center;
+}
+
+#footer a {
+  color: var(--primary);
+  text-decoration: underline;
 }
