@@ -1,0 +1,28 @@
+.modal {
+  position: fixed;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-sizing: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+#backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+  }
+}

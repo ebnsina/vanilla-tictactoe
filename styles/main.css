@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Miriam+Libre:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #00dd82;
+  --primary-light: #33e49b;
+  --primary-lighter: #66ebb4;
+  --primary-lightest: #b3f5da;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgb(247, 239, 247);
+  color: hsl(220, 13%, 18%);
+}
+
+#main-header {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 2rem 3%;
+  text-align: center;
+}
+
+.btn {
+  font: inherit;
+  padding: 0.6rem 1.5rem;
+  background-color: var(--primary);
+  border: solid 1px var(--primary);
+  color: #fff;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
+}
+
+.btn-alt {
+  background-color: transparent;
+  border: solid 1px transparent;
+  color: var(--primary);
+}
+
+.btn-alt:hover {
+  background-color: var(--primary-lightest);
+  border: solid 1px transparent;
+  color: var(--primary);
+}
